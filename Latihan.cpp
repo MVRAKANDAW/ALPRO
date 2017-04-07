@@ -1,50 +1,85 @@
 #include <iostream>
-#include <string>
 using namespace std;
 
-//void pilihanA() {
+//Fungsi pilihan A
+pilihanA(){
+	cout << "Nilai Minimum : ";
+}
 
+//Fungsi pilihan B
+pilihanB(){
+	cout << "Nilai Maximum : ";
+}
 
-
-//}
-
-//void pilihanB() {
-
-
-
-
-//}
-
+// Algoritma
 int main () {
 
-int angka = 0 , max, min, jumlah = 0 ,  pil;
-char A, B;
+//Kamus
+int jumlah, angka, min, max = 0;
+char pilihan;
 
-A = pil;
-B = pil;
+//pilihan A/B
+cout << "A = Min B = Max" << endl;
 
+//input Data Jumlah
 cout << "Masukan Jumlah : ";
-cin >> jumlah ;
+cin >> jumlah;
 
-//cout << "Masukan pilihan : ";
-//cin >> pil ;
+//input Data Pilihan
+cout << "Masukan Pilihan : ";
+cin >> pilihan;
 
-while (angka >= 0 ) {
+//Klasifikasi Data A
+if (pilihan == 'A') {
 
-if ((pil >= B)) {B=pil;}
+	//Perulangan 
+	for (angka = 1; angka <= jumlah; angka++) {
 
-else if((pil <= A)) {A=pil;} angka++;
+//input Data Masukan Angka
+cout << "Masukan Angka : ";
+cin >> angka;
 
-cout << "Masukan angka : ";
-cin >> angka ;
+	//klasifikasi Data Minimum
+	if (angka == 1) {
+		min = angka;
+	} 
+
+	else if (min > angka) {
+		min = angka;
+	}
 
 }
 
+//Pemanggilan Fungsi A
+pilihanA(); cout << min ;
 
-  cout << "Nilai Minimum          : " << pil << endl;
-  cout << "Nilai Maximum           : " << pil << endl;
+}
 
+//Klasifikasi Data B
+if (pilihan == 'B') {
 
+	//Perulangan
+	for (angka = 1; angka <= jumlah; angka++) {
+
+//Input Data Masukan Angka
+cout << "Masukan Angka : ";
+cin >> angka;
+
+	//Klasifikasi Data Maximal
+	if (angka == 1) {
+		max = angka;
+	} 
+
+	else if (max < angka) {
+		max = angka;
+	}
+}
+
+//Pemanggilan Fungsi B
+pilihanB(); cout << max;
+
+}
 
 return 0;
+
 }
