@@ -1,0 +1,55 @@
+
+REVIEW !
+
+ALGORITMA PENCARIAN BAGI DUA
+
+1. Program Kali merupakan program pencarian bagi dua, dan disini saya mempunyai
+   variabel angka yang bernilai 10 "int angka[10]" dan bertipe intejer dan pada programnya 
+   terdapat juga variabel cari "int cari" untuk difungsikan untuk inputkan angka berapa 
+   yang akan dicari
+
+2. Pertama - tama saya membuat input / masukan dengan " cin << angka[a] " 
+   mengapa saya mengambil nilai a dikarenakan saya membutuhkan pengulangan 
+   untuk memasukan nilai sebanyak 10 x dengan pengulangan " for (int a=0; a < 10; a++ ) "
+   
+3. setalah saya membuat sebuah pengulangan masukan sebuah angka sehingga dapat 
+   terpenuhi dengan 10 x maka saya membuat masukan angka yang akan dicari dimana
+   kita dapat memasukan angka berapa yang akan kita cari
+   Example : " cout << "MASUKAN ANGKA YANG INGIN DICARI : ";
+               cin >> cari ; "
+
+4. Setelah itu mulai membuat pencarian bagi dua, disini saya menambahkan sebuah variable bertipe intejer
+   
+   i, j, k :
+   i = 0 (NIlai awal / Batas Kiri)
+   j = 9 (Nilai Akhir / Batas Kanan)
+   k (i+j)/2 (NILAI TENGAH)
+   
+   PROSES PENGULANGAN WHILE 
+   "while ( i <= j)" -> Jika i (0) kurang dari j (9) maka proses pengulangan akan terus berlanjut sampai
+   nilai tersebut terpenuhi.
+   
+5. Setelah Proses pengulangan ( i <= j ) maka program akan memproses sebuah kondisi dimana sebuah nilai
+   angka[k] == cari maka data yang dicari ditemukan .
+   
+   Example : 
+   
+   if (angka[k] == cari) {
+
+cout << endl;
+
+		cout << "DATA DITEMUKAN PADA INDEKS : " << k ;
+		cout << endl;
+		break;
+	}
+  
+6. Tetapi Apabila "angka[k] kurang dari nilai yang dicari cari" maka sebuah program akan mengnisialisasikan 
+   "i = k + 1;" program akan mencari nilai pada nilai awal / batas kiri , tetapi apabila "angka[k] lebih dari 
+   nilai yang dicari cari" maka program akan pada nilai akhhir / batas kanan
+ 
+7. Apabila nilai yang kita cari berada di sebelah kiri maka program akan melakukan pencarian disebelah kiri,
+   dan Apabila nilai yang kita cari berada di sebelah kanan maka program akan melakukan pencarian disebelah kanan.
+   sampai indeks i = j (bernilai sama dengan nilai yang dicari )
+   
+8. jika i > j maka data yang dicari tidak ditemukan .
+</p>
